@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/RLogo.png" type="image/x-icon">
     <title>Personal Portfolio - Rohith </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -17,58 +20,96 @@
             </div>
             <div>
                 <ul class="header-section-list">
-                    <li> <a href="#"></a>Home</li>
-                    <li> <a href="#"></a>Service</li>
-                    <li> <a href="#"></a>About</li>
-                    <li> <a href="#"></a>Portfolio</li>
-                    <li> <a href="#"></a>Testimonials</li>
+                    <a href="#">
+                        <li> Home </li>
+                    </a>
+                    <a href="#about">
+                        <li> About </li>
+                    </a>
+                    <a href="#service">
+                        <li> Service </li>
+                    </a>
+
+                    <a href="#portfolio">
+                        <li> Portfolio </li>
+                    </a>
+                    <a href="#testimonials">
+                        <li> Testimonials </li>
+                    </a>
+                    <a href="#contact">
+                        <li> contact </li>
+                    </a>
                 </ul>
             </div>
         </div>
     </header>
     <main>
         <!-- Hero Section -->
-        <div class="hero-section">
+        <div class="hero-section"  data-aos="fade-down">
             <div>
                 <h2 class="hello-txt">Hello! I Am</h2>
                 <h1 class="name-txt">Rohith Varatharajan</h1>
                 <p class="hero-desc">
-                    I'm a versatile Web Developer and UI/UX Designer with 6+ Months of experience crafting
-                    high-performance, responsive Web Applications. I blend sleek design with solid backend integration
-                    to build smart, scalable digital solutions.
+                    I'm a versatile UX Designer and Web Developer with 6+ months of experience crafting intuitive,
+                    responsive, and user-focused digital products. I blend clean visual design with seamless frontend
+                    integration to build smart, scalable, and high-performance experiences.
                 </p>
                 <div>
-                    <button class="hero-btn"> Hire Me</button>
-                    <button class="hero-btn"> See My Work</button>
+                    <button class="hero-btn" onclick="window.location.href='mailto:rohithnw@gmail.com'">
+                        Hire Me
+                    </button>
+                    <a href="#portfolio"><button class="hero-btn"> See My Work</button></a>
                 </div>
             </div>
             <div>
-                <img src="./images/rohit.png" class="animate-on-scroll hero-sec-img" data-animate="animate__pulse">
+                <img src="./images/heroImage.png" class="hero-sec-img" data-aos="zoom-in">
+            </div>
+        </div>
+
+        <!--About me section-->
+        <div class="about-sec-container" id="about">
+            <div data-aos="fade-right">
+                <img class="about-img" src="./images/rohit.png" alt="my image">
+            </div>
+            <div class="about-content-container" data-aos="fade-left">
+                <h2 class="about-head">About me</h2>
+                <h3 class="about-head-desc">Passionate creator shaping <br> digital experiences with<br> clarity and
+                    purpose.</h3>
+                <p class="about-summary">Enthusiastic UX Designer and Web Developer focused on creating intuitive,
+                    user-centered digital products. I blend creative thinking with technical skill to build meaningful,
+                    visually refined, and high-performance experiences.
+                    Driven by curiosity and continuous learning, I enjoy solving design challenges, refining details,
+                    and crafting solutions that feel simple, clean, and scalable. With a collaborative mindset, I aim to
+                    contribute to impactful and user-focused digital transformations.</p>
+                <a href="./Rohith_UX_Resume.pdf" download>
+                    <button class="hero-btn">Download CV</button>
+                </a>
             </div>
         </div>
 
         <!-- Expertise Section -->
-        <div class="expertise-heading">
+        <div class="expertise-heading" id="service">
             <p class="exp-head">My Expertise</p>
             <p class="exp-head2">Provide Wide Range of </p>
             <p class="exp-head2">Digital Services</p>
         </div>
 
-        <div class="skill-section-container">
-            <div class="animate-on-scroll skill-card" data-animate="animate__backInUp">
-                <img src="./images/service-icon1.png" alt="Web Development">
-                <h2 class="skill-header">Web Development
-                </h2>
-                <p>Designing responsive, modern, and dynamic websites for your business growth.</p>
-            </div>
-            <div class="animate-on-scroll skill-card" data-animate="animate__backInUp">
+        <div class="skill-section-container" data-aos="fade-up">
+            <div class="skill-card">
                 <img src="./images/service-icon2.png" alt="Web Development">
                 <h2 class="skill-header">UI/UX Design
                 </h2>
                 <p>Creating intuitive and visually appealing designs to enhance user experiences.</p>
             </div>
-            <div class="animate-on-scroll skill-card" data-animate="animate__backInUp">
-                <img src="./images/service-icon3.png" alt="Web Development">
+            <div class="skill-card">
+                <img src="./images/service-icon1.png" alt="Web Development">
+                <h2 class="skill-header">Web Development
+                </h2>
+                <p>Designing responsive, modern, and dynamic websites for your business growth.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="./images/service-icon3.png" class="third-card-img" alt="Web Development">
                 <h2 class="skill-header">API Development & Integration
                 </h2>
                 <p>Building and integrating custom APIs to connect your applications seamlessly with third-party
@@ -76,77 +117,8 @@
             </div>
         </div>
 
-        <div class="my-skills-section">
-            <div class=" animate-on-scroll skill-sec-container1" data-animate="animate__backInLeft">
-                <div class="skill-sec-container">
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/figma.png" alt="">
-                        <p>Figma</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/html.png" alt="">
-                        <p>HTML</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/css.png" alt="">
-                        <p>CSS</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/bootstrapimg.webp" alt="">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/jsimg.png" alt="">
-                        <p>JavaScript</p>
-                    </div>
-                </div>
-                <div class="skill-sec-container">
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/jqueryimg.png" alt="">
-                        <p>Jquery</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/ajaximg.png" alt="">
-                        <p>Ajax</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/reactimg.png" alt="">
-                        <p>ReactJS</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/nodejsimg.png" alt="">
-                        <p>NodeJS</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/expressjsimg.webp" alt="">
-                        <p>ExpressJS</p>
-                    </div>
-                </div>
-                <div class="skill-sec-container">
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/mongodbimg.png" alt="">
-                        <p>MongoDb</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/mysql.png" alt="">
-                        <p>MySql</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/gitimg.png" alt="">
-                        <p>Git</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/githubimg.png" alt="">
-                        <p>Github</p>
-                    </div>
-                    <div class="skill-sec">
-                        <img class="skill-img" src="./images/netlifyimg.jpeg" alt="">
-                        <p>Netlify</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
+        <div class="my-skills-section"  data-aos="fade-up">
+            <div class="my-skill-info">
                 <p class="exp-head">My Skills</p>
                 <h1 class="exp-head2">Crafting Beautiful & Unique Digital Experiences</h1>
                 <div class="header-div2">
@@ -155,93 +127,135 @@
                     <p>With a focus on innovation and quality, I design and develop experiences that stand out and
                         engage users effectively.</p>
                 </div>
-                <button class="hero-btn"> Download CV</button>
+                <a href="./Rohith_UX_Resume.pdf" download>
+                    <button class="hero-btn">Download CV</button>
+                </a>
             </div>
+        </div>
+
+        <div class="skill-sec-container1">
+            <div class="skill-sec-container">
+
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img1" src="./images/figmaPic.png" alt="">
+                    <p>Figma</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/photoshop-img.png" alt="">
+                    <p>Photoshop</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/canva.jfif" alt="">
+                    <p>Canva</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/htmlImg.png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/cssPic.png" alt="">
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/tailwindPic.png" alt="">
+                    <p>TailwindCSS</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/jsPic.png" alt="">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-sec"  data-aos="flip-left">
+                    <img class="skill-img" src="./images/reactPic.png" alt="">
+                    <p>React.js</p>
+                </div>
+
+            </div>
+
+
         </div>
         <!-- My Work Section-->
-         <div class="expertise-heading ">
-            <p class="exp-head">Creative Work</p>
-            <p class="exp-head2">Check My Portfolio</p>
-        </div>
-
-                            <!-- 1 st row-->
-        <div class="project-div">
-            <!--card one-->
-            <div class="project-card">
-                <img class="project-img" src="./images/movie-cafe.PNG" alt="movie-cafe">
-                <div class="project-inner-card">
-                    <p class="project-title">Movie cafe Website</p>
-                    <div class="pro-badges">
-                        <p class="project-badge">HTML</p>
-                        <p  class="project-badge">CSS</p>
-                        <p  class="project-badge">Bootstrap</p>
-                    </div>
-                    <a class="project-link" href="#">View Live Project</a>
-                </div>
+        <div class="work-section-container" id="portfolio">
+            <div class="expertise-heading ">
+                <p class="exp-head">Creative Work</p>
+                <p class="exp-head2">Check My Portfolio</p>
             </div>
 
-              <!--card two-->
-            <div class="project-card">
-                <img class="project-img" src="./images/foodApp.PNG" alt="food app">
-                <div class="project-inner-card">
-                    <p class="project-title">Food App website</p>
-                    <div class="pro-badges">
-                        <p class="project-badge">HTML</p>
-                        <p  class="project-badge">CSS</p>
-                        <p  class="project-badge">Tailwind CSS</p>
+            <!-- 1 st row-->
+            <div class="project-div">
+                <!--card one-->
+                <div class="project-card"   data-aos="fade-right">
+                    <img class="project-img" src="./images/eventapp.png" alt="College Time App">
+                    <div class="project-inner-card">
+                        <p class="project-title">College Time – UX Case Study</p>
+                        <div class="pro-badges">
+                            <p class="project-badge">UX Research</p>
+                            <p class="project-badge">Figma</p>
+                            <p class="project-badge">UI/UX</p>
+                        </div>
+
+                        <!-- Link to PDF -->
+                        <a class="project-link" href="./College_time_UX_Case_Study.pdf" target="_blank">
+                            View Case Study
+                        </a>
                     </div>
-                    <a class="project-link" href="#">View Live Project</a>
                 </div>
-            </div>
-        </div>
-        <!-- 2nd row -->
-              <div class="project-div">
-            <!--card one-->
-            <div class="project-card">
-                <img class="project-img" src="./images/coffe-shop.PNG" alt="coffee shop">
-                <div class="project-inner-card">
-                    <p class="project-title">coffee shop website</p>
-                    <div class="pro-badges">
-                        <p class="project-badge">HTML</p>
-                        <p  class="project-badge">CSS</p>
+                <!--card two-->
+                <div class="project-card"   data-aos="fade-left">
+                    <img class="project-img" src="./images/pet-adoption.PNG" alt="College Time App">
+                    <div class="project-inner-card">
+                        <p class="project-title">Dog Adoption Website</p>
+                        <div class="pro-badges">
+                            <p class="project-badge">Figma</p>
+                            <p class="project-badge">UI/UX</p>
+                        </div>
+
+                        <!-- Link to PDF -->
+                        <a class="project-link"
+                            href="https://www.figma.com/proto/SNFu5Ti0dLE2l0qofOKYGM/dog-adoption?node-id=11-37&t=VFHr8F5wNAGangKU-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A37"
+                            target="_blank">
+                            View Prototype </a>
                     </div>
-                    <a class="project-link" href="#">View Live Project</a>
                 </div>
             </div>
 
-              <!--card two-->
-            <div class="project-card">
-                <img class="project-img" src="./images/pet-adoption.PNG" alt="food app">
-                <div class="project-inner-card">
-                    <p class="project-title">Dog Adoption website</p>
-                    <div class="pro-badges">
-                        <p class="project-badge">HTML</p>
-                        <p  class="project-badge">CSS</p>
+            <div class="project-div">
+                <!--card one-->
+                <div class="project-card"  data-aos="fade-right">
+                    <img class="project-img" src="./images/coffe-shop.PNG" alt="coffee shop">
+                    <div class="project-inner-card">
+                        <p class="project-title">coffee shop website</p>
+                        <div class="pro-badges">
+                            <p class="project-badge">HTML</p>
+                            <p class="project-badge">CSS</p>
+                        </div>
+                        <a class="project-link" href="https://rohith-vu.github.io/coffee-shop-single-page-application/"
+                            target="_blank">View Live Project</a>
                     </div>
-                    <a class="project-link" href="#">View Live Project</a>
                 </div>
-            </div>
-        </div>
-<!-- 3rd row-->
-    <div class="project-div">
-            <!--card one-->
-            <div class="project-card">
-                <img class="project-img" src="./images/eventapp.png" alt="event App">
-                <div class="project-inner-card">
-                    <p class="project-title">Event App</p>
-                    <div class="pro-badges">
-                        <p class="project-badge">React native</p>
+                <!--card two-->
+                <div class="project-card"  data-aos="fade-left">
+                    <img class="project-img" src="./images/movie-cafe.PNG" alt="movie-cafe">
+                    <div class="project-inner-card">
+                        <p class="project-title">Movie cafe Website</p>
+                        <div class="pro-badges">
+                            <p class="project-badge">HTML</p>
+                            <p class="project-badge">CSS</p>
+                            <p class="project-badge">Bootstrap</p>
+                        </div>
+                        <a class="project-link" href="https://rohith-vu.github.io/MovieCafe/" target="_blank">View Live
+                            Project</a>
                     </div>
-                    <a class="project-link" href="#">View Live Project</a>
                 </div>
+
+
+
             </div>
 
-              <!--card two-->
-         
         </div>
-        <div class="line"></div>
+
         <!-- Testimnials Section-->
-        <div class="testimonials-div">
+        <div class="testimonials-div" id="testimonials">
             <div>
                 <img class="testimonials-img" src="./images/testimonials-img.png" alt="">
             </div>
@@ -253,19 +267,22 @@
                 <div class="carousel">
                     <div class="carousel-content" id="carouselContent">
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a skilled Web developer who builds smooth and efficient web
-                                apps. His passion for web development and problem-solving is evident in his work."</p>
+                            <p class="hero-desc">"Rohith is a growing UI/UX Designer who focuses on creating simple,
+                                clear, and user-friendly designs.
+                                His curiosity and effort to understand users help him make better design decisions."</p>
                             <p class="testimonials-name"> Kalyanasundaram </p>
                             <p>CEO of Balkans IT solutions Pvt.Ltd</p>
                         </div>
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a skilled and dedicated Web developer, committed to building
-                                high-quality Web apps with smooth performance and a focus on excellence"</p>
+                            <p class="hero-desc">"Rohith is a developing UI/UX Designer with a sharp eye for clean,
+                                simple, and user-friendly design. He creates interfaces that are easy to use, visually
+                                clear, and focused on real user needs."</p>
                             <p class="testimonials-name"> Mohamed Jaffir </p>
                             <p>Senior Backend Developer at Balkans IT solutions Pvt.Ltd</p>
                         </div>
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a skilled Web developer with a sharp eye for UI/UX, creating
+                            <p class="hero-desc">"Rohith is a skilled UX Designer and Web developer with a sharp eye for
+                                UI/UX, creating
                                 functional, elegant web apps with a focus on performance and user experience."</p>
                             <p class="testimonials-name"> Muthukumarasamy </p>
                             <p>Senior Software Developer at Balkans IT solutions Pvt.Ltd</p>
@@ -279,7 +296,7 @@
             </div>
         </div>
         <!-- Contact Section -->
-        <div class="contact-section">
+        <div class="contact-section" id="contact" data-aos="fade-up">
             <div class="contact-form-header">
                 <p class="exp-head">Get in Touch</p>
                 <h2 class="exp-head2"> Any Questions? Feel Free to Contact</h2>
@@ -323,13 +340,16 @@
                     </div>
 
                 </div>
-                <div class="contact-inputs-div">
-                    <input class="inputs" type="text" placeholder="Name">
-                    <input class="inputs" type="email" placeholder="Email">
-                    <input class="inputs" type="text" placeholder="Mobile No">
-                    <textarea class="inputs inputs-textarea" name="" id="" placeholder="Message"></textarea>
-                    <button class="hero-btn inputs-div"> Submit</button>
-                </div>
+                <form action="mailto:rohithnw@gmail.com" method="POST" enctype="text/plain" class="contact-inputs-div">
+
+                    <input class="inputs" type="text" name="Name" placeholder="Name" required>
+                    <input class="inputs" type="email" name="Email" placeholder="Email" required>
+                    <input class="inputs" type="text" name="Mobile" placeholder="Mobile No" required>
+                    <textarea class="inputs inputs-textarea" name="Message" placeholder="Message" required></textarea>
+
+                    <button class="hero-btn inputs-div" type="submit">Submit</button>
+                </form>
+
             </div>
         </div>
 
@@ -337,23 +357,47 @@
             <div class="footer">
                 <h2>Portfolio</h2>
                 <ul class="footer-li footer-txt">
-                    <li>Home  |</li>
-                    <li>About  |</li>
-                    <li>Service  |</li>
-                    <li>Portfolio  |</li>
-                    <li>Contact</li>
+                    <a href="#">
+                        <li>Home |</li>
+                    </a>
+                    <a href="#about">
+                        <li>About |</li>
+                    </a>
+                    <a href="#service">
+                        <li>service |</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li>Portfolio |</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact |</li>
+                    </a>
                 </ul>
                 <div class="footer-icons">
-                    <div class="icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License --><path fill="currentColor" d="M18.336 18.339h-2.665v-4.177c0-.996-.02-2.278-1.39-2.278c-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387c2.7 0 3.2 1.778 3.2 4.092v4.714M7.004 8.575a1.546 1.546 0 0 1-1.548-1.549a1.548 1.548 0 1 1 1.547 1.549m1.336 9.764H5.667V9.75H8.34zM19.67 3H4.33C3.594 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.339C20.4 21 21 20.42 21 19.703V4.297C21 3.581 20.4 3 19.666 3z"/></svg>
+                    <div class="icon-div"> <a href="https://www.linkedin.com/in/rohithvaratharajan/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                viewBox="0 0 24 24"><!-- Icon from Remix Icon by Remix Design - https://github.com/Remix-Design/RemixIcon/blob/master/License -->
+                                <path fill="currentColor"
+                                    d="M18.336 18.339h-2.665v-4.177c0-.996-.02-2.278-1.39-2.278c-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387c2.7 0 3.2 1.778 3.2 4.092v4.714M7.004 8.575a1.546 1.546 0 0 1-1.548-1.549a1.548 1.548 0 1 1 1.547 1.549m1.336 9.764H5.667V9.75H8.34zM19.67 3H4.33C3.594 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.339C20.4 21 21 20.42 21 19.703V4.297C21 3.581 20.4 3 19.666 3z" />
+                            </svg></a>
                     </div>
+<a href="mailto:rohithnw@gmail.com">
+    <div class="icon-div">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+            viewBox="0 0 24 24">
+            <path fill="currentColor"
+                d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" />
+        </svg>
+    </div>
+</a>
 
-                    <div class="icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><!-- Icon from Material Design Icons by Pictogrammers - https://github.com/Templarian/MaterialDesign/blob/master/LICENSE --><path fill="currentColor" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
-                    </div>
-                    <div class="icon-div">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><!-- Icon from TDesign Icons by TDesign - https://github.com/Tencent/tdesign-icons/blob/main/LICENSE --><path fill="currentColor" d="M12 .999c-6.074 0-11 5.05-11 11.278c0 4.983 3.152 9.21 7.523 10.702c.55.104.727-.246.727-.543v-2.1c-3.06.683-3.697-1.33-3.697-1.33c-.5-1.304-1.222-1.65-1.222-1.65c-.998-.7.076-.686.076-.686c1.105.08 1.686 1.163 1.686 1.163c.98 1.724 2.573 1.226 3.201.937c.098-.728.383-1.226.698-1.508c-2.442-.286-5.01-1.253-5.01-5.574c0-1.232.429-2.237 1.132-3.027c-.114-.285-.49-1.432.107-2.985c0 0 .924-.303 3.026 1.156c.877-.25 1.818-.375 2.753-.38c.935.005 1.876.13 2.755.38c2.1-1.459 3.023-1.156 3.023-1.156c.598 1.554.222 2.701.108 2.985c.706.79 1.132 1.796 1.132 3.027c0 4.332-2.573 5.286-5.022 5.565c.394.35.754 1.036.754 2.088v3.095c0 .3.176.652.734.542C19.852 21.484 23 17.258 23 12.277C23 6.048 18.075.999 12 .999"/></svg>
-                    </div>
+                    <a href="https://github.com/Rohith-VU" target="_blank"><div class="icon-div">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 24 24"><!-- Icon from TDesign Icons by TDesign - https://github.com/Tencent/tdesign-icons/blob/main/LICENSE -->
+                            <path fill="currentColor"
+                                d="M12 .999c-6.074 0-11 5.05-11 11.278c0 4.983 3.152 9.21 7.523 10.702c.55.104.727-.246.727-.543v-2.1c-3.06.683-3.697-1.33-3.697-1.33c-.5-1.304-1.222-1.65-1.222-1.65c-.998-.7.076-.686.076-.686c1.105.08 1.686 1.163 1.686 1.163c.98 1.724 2.573 1.226 3.201.937c.098-.728.383-1.226.698-1.508c-2.442-.286-5.01-1.253-5.01-5.574c0-1.232.429-2.237 1.132-3.027c-.114-.285-.49-1.432.107-2.985c0 0 .924-.303 3.026 1.156c.877-.25 1.818-.375 2.753-.38c.935.005 1.876.13 2.755.38c2.1-1.459 3.023-1.156 3.023-1.156c.598 1.554.222 2.701.108 2.985c.706.79 1.132 1.796 1.132 3.027c0 4.332-2.573 5.286-5.022 5.565c.394.35.754 1.036.754 2.088v3.095c0 .3.176.652.734.542C19.852 21.484 23 17.258 23 12.277C23 6.048 18.075.999 12 .999" />
+                        </svg>
+                    </div> </a>
+                    
                 </div>
 
                 <div class="Copyright-div">
@@ -364,6 +408,15 @@
     </main>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <script src="./script.js"> </script>
 
 </html>

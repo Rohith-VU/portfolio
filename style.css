@@ -6,6 +6,9 @@
      padding: 0px;
      box-sizing: border-box;
  }
+ html{
+    scroll-behavior: smooth;
+ }
 
  body {
      font-family: "Poppins", sans-serif;
@@ -34,15 +37,20 @@
      list-style: none;
  }
 
- .header-section-list li {
+ .header-section-list a {
      cursor: pointer;
-
+     text-decoration: none;
+     color: #000;
  }
+
+  .header-section-list li:hover{
+     border-bottom: 2px solid rgba(246, 186, 5, 0.959);
+ }
+
 
  .header-head-txt {
      color: rgb(31, 31, 96);
-          padding-left: 50px;
-
+     padding-left: 50px;
  }
 
  .hero-section {
@@ -50,7 +58,8 @@
      display: flex;
      padding: 50px 80px;
      margin-top: 70px;
-     gap: 100px;
+     justify-content: space-between;
+     padding: 70px;
  }
 
  .hello-txt {
@@ -93,6 +102,7 @@
      text-align: center;
      align-items: center;
      margin-top: 40px;
+     padding-top:40px;
  }
 
  .exp-head {
@@ -124,9 +134,14 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     gap: 15px;
-     width: 400px;
+     gap: 20px;
+     width: 380px;
      text-align: center;
+ }
+
+ .third-card-img{
+    height: 115px;
+    margin-bottom: 10px;
  }
 
  .animate-on-scroll {
@@ -147,6 +162,14 @@
      color: rgb(103, 102, 102);
  }
 
+ .my-skill-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 70px 0px;
+ }
  .skill-section-container {
      display: flex;
      justify-content: center;
@@ -154,6 +177,7 @@
      gap: px;
      text-align: center;
      margin-top: 50px;
+     padding-bottom: 20px;
  }
 
  .skill-sec {
@@ -163,30 +187,88 @@
      align-items: center;
      gap: 8px;
      text-align: center;
+      background-color:aliceblue;
+     padding:15px;
+     font-weight:500;
+     border-radius: 5px;
+     box-shadow: 1px 1px 1px 1px rgb(217, 215, 215);
+     width: 200px;
  }
 
  .skill-img {
-     width: 40px;
-     height:40px;
+     height:50px;
+     width: 40px; 
+     cursor: pointer; 
+ }
+ .skill-img1 {
+     height:50px;
+     width: 40px; 
+     cursor: pointer; 
  }
 
  .skill-sec-container {
      display: flex;
-     gap: 40px;
      align-items: center;
+     justify-content:center;
+     margin: 30px 20px;
+     gap:25px;
+     
+ }
+
+ .work-section-container{
+    background-color: aliceblue;
+    padding: 40px;
  }
 
  .hero-sec-img {
-     width: 300px;
+     width:410px;
      border-radius: 10px;
  }
+
+ .about-head{
+    font-size: 39px;
+    color: rgb(29, 69, 153);;
+ }
+
+ .about-head-desc{
+    font-size: 30px;
+    color: rgb(31,31,96)
+ }
+.about-summary{
+    color:rgb(100, 100, 100);
+    font-size: 19px;
+}
+
+ .about-sec-container{
+    display: flex;
+    margin: 20px 60px;
+    gap:30px;
+ }
+ .about-content-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:15px;
+    margin-right: 10px;
+    
+ }
+
+.about-img{
+    width: 450px;
+    background-color:rgb(248, 246, 246);
+    padding: 20px 0px 0px 10px;
+    margin: 30px;
+    border-radius: 5px;
+    height: auto;
+}
 
  .skill-sec-container1 {
      display: flex;
      flex-wrap: nowrap;
      flex-direction: column;
      gap: 20px;
-     margin: 90px;
+     margin: 20px;
      background-color: white;
      padding: 40px;
      border-radius: 20px;
@@ -214,7 +296,7 @@
  .testimonials-div {
      display: flex;
      align-items: center;
-     padding: 50px 120px;
+     padding: 80px 120px;
      gap: 50px;
  }
 
@@ -365,9 +447,13 @@
  }
 
  .footer-li {
-     list-style-type: none;
      display: flex;
      gap: 10px;
+     list-style-type: none;
+ }
+ .footer-li a{
+ text-decoration: none;
+ color:gray;
  }
 
  .footer-icons {
@@ -403,7 +489,8 @@
 .project-img{
     width:500px;
     border-radius:8px;
-    border: 6px solid rgb(47, 47, 47);
+    height: 250px;
+    box-shadow: 1px 1px 1px 1px rgb(210, 209, 209);
 }
 .project-title{
      font-family: "Josefin Sans", sans-serif;
@@ -442,6 +529,10 @@
     align-items: center;
     gap: 20px;
     margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 1px rgb(225, 224, 224);
 }
 .project-inner-card{
        display: flex;

@@ -1,16 +1,6 @@
- const elements = document.querySelectorAll('.animate-on-scroll');
+  AOS.init();
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const animation = entry.target.getAttribute('data-animate');
-        entry.target.classList.add('animate__animated', animation, 'visible');
-        observer.unobserve(entry.target); // play once
-      }
-    });
-  }, { threshold: 0.3 });
-  
-
+const elements = document.querySelectorAll('.animate-on-scroll');
   elements.forEach(el => observer.observe(el));
 const carouselContent = document.getElementById('carouselContent');
     const slides = document.querySelectorAll('.slide');
@@ -36,3 +26,12 @@ const carouselContent = document.getElementById('carouselContent');
       index = (index + 1) % totalSlides;
       updateCarousel();
     }, 4000);
+
+  function downloadCV() {
+    const link = document.createElement("a");
+    link.href = "./Rohith_UX_Resume.pdf";            
+    link.download = "Rohith_UX_Resume.pdf";        
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
