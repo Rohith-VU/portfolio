@@ -15,46 +15,36 @@
 <body>
     <header>
         <div class="header-div">
-            <div>
-                <h1 class="header-head-txt">Portfolio</h1>
-            </div>
-            <div>
-                <ul class="header-section-list">
-                    <a href="#">
-                        <li> Home </li>
-                    </a>
-                    <a href="#about">
-                        <li> About </li>
-                    </a>
-                    <a href="#service">
-                        <li> Service </li>
-                    </a>
+            <h1 class="header-head-txt">Portfolio</h1>
 
-                    <a href="#portfolio">
-                        <li> Portfolio </li>
-                    </a>
-                    <a href="#testimonials">
-                        <li> Testimonials </li>
-                    </a>
-                    <a href="#contact">
-                        <li> contact </li>
-                    </a>
-                </ul>
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
             </div>
+
+            <ul class="header-section-list" id="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </header>
+
     <main>
         <!-- Hero Section -->
         <div class="hero-section" data-aos="fade-down">
-            <div>
+            <div class="hero-info">
                 <h2 class="hello-txt">Hello! I Am</h2>
                 <h1 class="name-txt">Rohith Varatharajan</h1>
                 <p class="hero-desc">
-                    I'm a versatile UX Designer and Web Developer with 6+ months of experience crafting intuitive,
-                    responsive, and user-focused digital products. I blend clean visual design with seamless frontend
-                    integration to build smart, scalable, and high-performance experiences.
+                    I’m a versatile Web and Frontend Developer with 6+ months of experience building responsive,
+                    user-friendly, and visually clean web applications. I combine strong UI design principles with
+                    modern frontend development to create scalable, high-performance, and intuitive digital experiences.
                 </p>
-                <div>
+                <div class="hero-btns">
                     <button class="hero-btn" onclick="window.location.href='mailto:rohithnw@gmail.com'">
                         Hire Me
                     </button>
@@ -75,12 +65,12 @@
                 <h2 class="about-head">About me</h2>
                 <h3 class="about-head-desc">Passionate creator shaping <br> digital experiences with<br> clarity and
                     purpose.</h3>
-                <p class="about-summary">Enthusiastic UX Designer and Web Developer focused on creating intuitive,
-                    user-centered digital products. I blend creative thinking with technical skill to build meaningful,
-                    visually refined, and high-performance experiences.
-                    Driven by curiosity and continuous learning, I enjoy solving design challenges, refining details,
-                    and crafting solutions that feel simple, clean, and scalable. With a collaborative mindset, I aim to
-                    contribute to impactful and user-focused digital transformations.</p>
+                <p class="about-summary">Enthusiastic Web Developer and Frontend Developer focused on creating
+                    responsive, user-centered web applications. I blend clean frontend development with modern
+                    technologies to build meaningful, visually refined, and high-performance experiences.
+                    Driven by curiosity and continuous learning, I enjoy solving frontend challenges, refining
+                    interfaces, and crafting solutions that feel simple, clean, and scalable. With a collaborative
+                    mindset, I aim to contribute to impactful and user-focused digital products.</p>
                 <a href="./Rohith_resume.pdf" download>
                     <button class="hero-btn">Download CV</button>
                 </a>
@@ -99,20 +89,23 @@
                 <img src="./images/service-icon2.png" alt="Web Development">
                 <h2 class="skill-header">UI/UX Design
                 </h2>
-                <p>Creating intuitive and visually appealing designs to enhance user experiences.</p>
+                <p class="about-summary">Creating intuitive and visually appealing designs to enhance user experiences.
+                </p>
             </div>
             <div class="skill-card">
                 <img src="./images/service-icon1.png" alt="Web Development">
                 <h2 class="skill-header">Web Development
                 </h2>
-                <p>Designing responsive, modern, and dynamic websites for your business growth.</p>
+                <p class="about-summary">Designing responsive, modern, and dynamic websites for your business growth.
+                </p>
             </div>
 
             <div class="skill-card">
                 <img src="./images/service-icon3.png" class="third-card-img" alt="Web Development">
                 <h2 class="skill-header">API Development & Integration
                 </h2>
-                <p>Building and integrating custom APIs to connect your applications seamlessly with third-party
+                <p class="about-summary">Building and integrating custom APIs to connect your applications seamlessly
+                    with third-party
                     services.</p>
             </div>
         </div>
@@ -128,7 +121,7 @@
                         engage users effectively.</p>
                 </div>
                 <a href="./Rohith_resume.pdf" download>
-                    <button class="hero-btn">Download CV</button>
+                    <button class="hero-btn h-b">Download CV</button>
                 </a>
             </div>
         </div>
@@ -144,7 +137,7 @@
                     <img class="skill-img" src="./images/photoshop-img.png" alt="">
                     <p>Photoshop</p>
                 </div>
-                
+
                 <div class="skill-sec" data-aos="flip-left">
                     <img class="skill-img" src="./images/htmlImg.png" alt="">
                     <p>HTML</p>
@@ -172,11 +165,11 @@
                 </div>
 
             </div>
-           
+
 
 
         </div>
-        
+
         <!-- My Work Section-->
         <div class="work-section-container" id="portfolio">
             <div class="expertise-heading ">
@@ -278,7 +271,8 @@
                             <p class="project-badge">Reactjs</p>
                             <p class="project-badge">TailwindCSS/p>
                         </div>
-                        <a class="project-link" href="https://shopping-website-gilt-tau.vercel.app/" target="_blank">View Live
+                        <a class="project-link" href="https://shopping-website-gilt-tau.vercel.app/"
+                            target="_blank">View Live
                             Project</a>
                     </div>
                 </div>
@@ -287,7 +281,7 @@
 
             </div>
 
-              <div class="project-div">
+            <div class="project-div">
                 <!--card one-->
                 <div class="project-card" data-aos="fade-right">
                     <img class="project-img" src="./images/eventapp.png" alt="College Time App">
@@ -295,7 +289,7 @@
                         <p class="project-title">College Time </p>
                         <div class="pro-badges">
                             <p class="project-badge">React Native Expo</p>
-                            
+
                         </div>
 
                         <!-- Link to PDF -->
@@ -331,30 +325,30 @@
                 <img class="testimonials-img" src="./images/testimonials-img.png" alt="">
             </div>
             <div>
-                <div>
-                    <p class="exp-head">Testimonials</p>
+                <div class="testimonials-intro">
+                    <p class="exp-head-cpy">Testimonials</p>
                     <h2 class="exp-head2"> Happy Voices, Happy Stories</h2>
                 </div>
                 <div class="carousel">
                     <div class="carousel-content" id="carouselContent">
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a growing UI/UX Designer who focuses on creating simple,
-                                clear, and user-friendly designs.
-                                His curiosity and effort to understand users help him make better design decisions."</p>
+                            <p class="hero-desc">"Rohith is a growing Web and Frontend Developer who builds simple and
+                                user-friendly websites.
+                                His curiosity and willingness to learn help him improve his development skills."</p>
                             <p class="testimonials-name"> Kalyanasundaram </p>
                             <p>CEO of Balkans IT solutions Pvt.Ltd</p>
                         </div>
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a developing UI/UX Designer with a sharp eye for clean,
-                                simple, and user-friendly design. He creates interfaces that are easy to use, visually
-                                clear, and focused on real user needs."</p>
+                            <p class="hero-desc">"Rohith is a developing Web and Frontend Developer with a focus on
+                                clean, simple, and user-friendly websites. He creates interfaces that are easy to use,
+                                visually clear, and focused on real user needs."</p>
                             <p class="testimonials-name"> Mohamed Jaffir </p>
                             <p>Senior Backend Developer at Balkans IT solutions Pvt.Ltd</p>
                         </div>
                         <div class="slide">
-                            <p class="hero-desc">"Rohith is a skilled UX Designer and Web developer with a sharp eye for
-                                UI/UX, creating
-                                functional, elegant web apps with a focus on performance and user experience."</p>
+                            <p class="hero-desc">"Rohith is a skilled Web and Frontend Developer with a sharp eye for
+                                UI, creating functional and elegant web applications with a strong focus on performance
+                                and user experience."</p>
                             <p class="testimonials-name"> Muthukumarasamy </p>
                             <p>Senior Software Developer at Balkans IT solutions Pvt.Ltd</p>
                         </div>

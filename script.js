@@ -1,7 +1,8 @@
-  AOS.init();
-
+AOS.init();
+const toggle = document.getElementById("menu-toggle");
+const menu = document.querySelector(".header-section-list");
 const elements = document.querySelectorAll('.animate-on-scroll');
-  elements.forEach(el => observer.observe(el));
+elements.forEach(el => observer.observe(el));
 const carouselContent = document.getElementById('carouselContent');
     const slides = document.querySelectorAll('.slide');
     const totalSlides = slides.length;
@@ -35,3 +36,7 @@ const carouselContent = document.getElementById('carouselContent');
     link.click();
     document.body.removeChild(link);
   }
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
